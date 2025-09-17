@@ -9,8 +9,13 @@ I’m always looking for new challenges and for other builders who care as much 
 - or making everyday tools simpler so you have more time for what you love  
 
 ---
+---
 
-## 🔗 Live Site
+#🔗 Official Live Site
+👉 [Check it out on official URL](https://aaron-codes.dev/)  
+
+---
+## 🔗 GitHub's Page Site
 👉 [Check it out on GitHub Pages](https://aortiz55.github.io/aaron-portfolio/)  
 
 ---
