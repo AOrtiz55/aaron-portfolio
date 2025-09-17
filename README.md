@@ -10,15 +10,17 @@ I’m always looking for new challenges and for other builders who care as much 
 
 ---
 ---
+# 🌐 Live Portfolio
 
-# 🔗 Official Live Site
-👉 [Check it out on official URL](https://aaron-codes.dev/)  
-
----
-## 🔗 GitHub's Page Site
-👉 [Check it out on GitHub Pages](https://aortiz55.github.io/aaron-portfolio/)  
+## ✅ Official Site (Main)
+👉 [Check it out on **aaron-codes.dev**](https://aaron-codes.dev/)  
+_This is the main, production-ready site — always up to date._
 
 ---
+
+## 🔗 GitHub Pages (Backup / Mirror)
+👉 [View on **GitHub Pages**](https://aortiz55.github.io/aaron-portfolio/)  
+_This is a backup mirror hosted on GitHub Pages._
 
 ## 📌 Current Features
 - Static portfolio built with HTML, CSS, and JavaScript  
@@ -31,8 +33,8 @@ I’m always looking for new challenges and for other builders who care as much 
 - ⚛️ **React Version**: coming soon for a more dynamic and component-driven experience  
 - 📱 **Dynamic Screen Viewports**: responsive layouts that adjust to all devices seamlessly  
 - 📦 **Containerization**: DNS Docker/Podman setup for easy deployment and portability
-  -->DNS: CloudFlare
-  --> Containerized: Oracle
+  - 🌐 **DNS**: Cloudflare  
+  - 📦 **Containerized**: Oracle  
 
 ---
 
