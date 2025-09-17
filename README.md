@@ -25,7 +25,9 @@ I’m always looking for new challenges and for other builders who care as much 
 ## 🛠️ Roadmap
 - ⚛️ **React Version**: coming soon for a more dynamic and component-driven experience  
 - 📱 **Dynamic Screen Viewports**: responsive layouts that adjust to all devices seamlessly  
-- 📦 **Containerization**: Docker/Podman setup for easy deployment and portability  
+- 📦 **Containerization**: DNS Docker/Podman setup for easy deployment and portability
+  -->DNS: CloudFlare
+  --> Containerized: Oracle
 
 ---
 
