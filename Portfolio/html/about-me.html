@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <style></style>
+    <title >ABOUT ME</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a class="back-button" href="#" onclick="return goBack(event)">
+        <div class="bracket-container">
+          <div class="bracket-left">[</div>
+          <div class="nav-left" id="goBackBtn">go back</div>
+          <div class="bracket-right">]</div>
+        </div>
+      </a>
+
+      <div id="tabsToggle" class="nav-right" onclick="toggleTabs()">Menu</div>
+    </div>
+
+    <div class="main-content">
+      <div class="text-content">
+        <div class="about-title-wrap"> 
+        <div class="title">about me</div>
+        <div class="subtitle">Hi, I’m Aaron. I’m a developer who loves turning ideas into clean, fast, human-friendly products. 
+          I’m most at home in frontend and full-stack work, with a growing focus on practical AI.
+
+          I’m always looking for new challenges and for other builders who care as much as I do—whether that’s starting a study group, 
+          shipping a weekend project, or making everyday tools simpler so you have more time for what you love.
+          
+        </div>
+        <button class="btn" id="openModalBtn" aria-haspopup="dialog" aria-controls="learnMoreModal">Learn more</button>
+
+
+        <!-- Modal -->
+        <div class="modal" id="learnMoreModal" aria-hidden="true">
+        <div class="overlay" data-close></div>
+        
+        
+        <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc" tabindex="-1">
+        <button class="close" aria-label="Close modal" title="Close" data-close>&times;</button>
+        
+        
+        <div class="header">
+        <h2 class="title-modal" id="modalTitle">My Story</h2>
+        </div>
+        <p class="subtitle-modal" id="modalDesc">I started college aiming to become a neurosurgeon, fascinated by how the brain works. Along the way, I shifted into engineering and eventually gravitated to code. A line from a book stuck with me: <em>When you're so absorbed that time itself forgets you, that's where passion lives.</em>That was programming for me.
+      </p>
+
+        <p class="subtitle-modal" id="modalDesc">I didn’t switch majors—I built my skills the hard way: extra courses, side projects, and lots of late-night tinkering. I even tossed my Industrial Engineering résumé and walked into a national career fair as a developer. That gamble paid off with my first software engineering role.</p>
+
+        
+        
+        <p class="subtitle-list" id="modalDesc">What drives me</p>
+        <div class="content">
+          <ul>
+            <li>Keep learning, keep shipping</li>
+            <li>Build with care and make complex things feel simple</li>
+            <li>Find (and be) the kind of teammate who elevates everyone</li>
+          </ul>
+        </div>
+        <p class="subtitle-modal" id="modalDesc">Faith, passion, and consistency got me here—and they’ll take me further. I want to keep growing, building, mentoring, and contributing to teams that believe in me as much as I believe in the work.</p>
+        <p class="subtitle-modal" id="modalDesc">If my story resonates with you—or if you’re looking for a collaborator—let’s connect and build something worthwhile!</p>
+        
+        
+        <div class="actions">
+        <!-- <button class="btn" id="primaryAction">Get started</button> -->
+        <!-- <button class="btn secondary" data-close>Close</button> -->
+        </div>
+        </div>
+        </div>
+    </div>
+        <section class="about-hero">
+            <div class="about-hero__text">
+             
+     
+  
+            <div class="about-hero__photo">
+              <div class="hex-wrap">
+                <div class="hex-glow"></div>
+                <div class="hex">
+                  <img src="../images/aron2.PNG" alt="Portrait of John Kendric" />
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+
+ 
+       
+        <div class="tab-overlay" id="skillsOverlay">
+          <div class="tab-options">
+            <a href="./frontend.html">Frontend development </a>
+            <a href="./software.html">software engineering</a>
+            <a href="./softskill.html">Soft skills</a>
+          </div>
+        </div>
+
+        <div class="tab-menu" id="tabMenu">
+          <a id="menu-options" class="nav-right" href="./index.html">home</a>
+          <div class="nav-right">ABOUT ME</div>
+          <a id="menu-options" class="nav-right" href="./workEx.html"
+            >WORK EXPERIENCE</a
+          >
+          <div id="menu-options" class="nav-right" onclick="toggleSkillsOverlay()">
+            Skill sets
+          </div>
+          <!-- <div class="nav-right" onclick="toggleSkillsOverlay()">
+            soft skills
+          </div> -->
+          <a id="menu-options" class="nav-right" href="./softskill.html">soft skills</a>
+          <a id="menu-options" class="nav-right" href="./github.html"
+            >github PROJECTS</a
+          >
+          <a id="menu-options" class="nav-right" href="./cert.html"
+            >CERFICATIONS</a
+          >
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="../js/about.js">
+
+  </script>
+</html>
+<!-- .scroll-box {
+    position: relative;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 20px;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scroll-box::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .scroll-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+   -->

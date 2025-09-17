@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/workEX.css" />
+    <title>WORK EXPERIENCE PAGE</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a class="back-button" href="#" onclick="return goBack(event)">
+        <div class="bracket-container">
+          <div class="bracket-left">[</div>
+          <div class="nav-left" id="goBackBtn">go back</div>
+          <div class="bracket-right">]</div>
+        </div>
+      </a>
+
+      <div class="nav-right" onclick="toggleTabs()">Menu</div>
+    </div>
+
+    <div class="main-content">
+      <div class="text-content">
+        <div class="title">work experince</div>
+        <div class="subtitle">FULL-STACK DEVELOPER</div>
+
+        <div class="tags">
+          <!-- buttons sections-------------------------------------- -->
+          <button
+            id="main-git-button"
+            class="tag"
+            data-subtitle="initial layout"
+            onclick="handleTagClick(this, 0)"
+          >
+            initial layout
+          </button>
+          <button
+            class="tag dark"
+            data-subtitle="Northrop Grumman "
+            onclick="handleTagClick(this, 1)"
+          >
+            northrop grumman
+          </button>
+          <button
+            class="tag dark"
+            data-subtitle="ai company | start-up"
+            onclick="handleTagClick(this, 2)"
+          >
+            ai company | start-up
+          </button>
+          <button
+            class="tag dark"
+            data-subtitle="freelance"
+            onclick="handleTagClick(this, 3)"
+          >
+            freelance
+          </button>
+        </div>
+        <!-- section for adding exerpeince cards ------------------------------------->
+
+        <div
+          class="experience-cards"
+          id="northropgrummanExperience"
+          style="display: none"
+        >
+          <!-- Keep these 8 visible -->
+          <div class="card">
+            <strong>Frontend (Django & ServiceNow)</strong> — accessible,
+            responsive server-rendered UIs; componentized templates/partials
+            reduced duplicate code ~30%
+            <span class="metric">−30% duplicate</span>
+          </div>
+
+          <div class="card">
+            <strong>Prototyping & UX</strong> — high-fidelity Axure flows +
+            quick usability tests to validate interactions; cut
+            rework/turnaround ~20%
+            <span class="metric">−20% rework</span>
+          </div>
+
+          <div class="card">
+            <strong>Django frontend</strong> — server-rendered UI (Django
+            templates + vanilla JS) with secure forms, CSRF/validation, inline
+            errors, and progressive enhancement; data views backed by MongoDB
+            <span class="metric">Django • Frontend • MongoDB</span>
+          </div>
+
+          <div class="card">
+            <strong>ServiceNow UI (UI Builder)</strong> — role-based pages and
+            dashboards with custom widgets; fewer clicks and faster time-to-info
+            for common tasks
+            <span class="metric">ServiceNow</span>
+          </div>
+
+          <div class="card">
+            <strong>Scoped apps (ServiceNow)</strong> — reusable UI
+            components/widgets for scoped apps that streamlined requests &
+            improved visibility; saved <em>20+ hrs/month</em> across support
+            teams
+            <span class="metric">+20 hrs/mo</span>
+          </div>
+
+          <div class="card">
+            <strong>Synthetic monitoring (frontend journeys)</strong> —
+            Selenium/Robot Framework checks for login/search/submit and
+            high-volume paths; replaced manual testing
+            <span class="metric">manual → auto</span>
+          </div>
+
+          <div class="card">
+            <strong>UI observability</strong> — exposed metrics and built
+            real-time dashboards for front-end health (errors, p95, Apdex);
+            increased perceived availability to 95%
+            <span class="metric">95% avail</span>
+          </div>
+
+          <div class="card">
+            <strong>Frontend API integration</strong> — integrated REST
+            endpoints with lean payloads, caching, and pagination; reduced p95
+            UI latency ~15%
+            <span class="metric">−15% p95</span>
+          </div>
+
+          <!-- Tuck the rest behind an expander -->
+          <details class="more-cards">
+            <summary>More frontend/Devops impact</summary>
+
+            <div class="card">
+              <strong>Frontend release pipeline</strong> — containerized static
+              assets and preview environments on OpenShift (Docker/Kubernetes)
+              for faster, more reliable UI releases
+              <span class="metric">OpenShift • K8s</span>
+            </div>
+
+            <div class="card">
+              <strong>Build & deploy automation</strong> — CI/CD for front-end:
+              build/minify/version static assets with environment-specific
+              config on AWS/Azure
+              <span class="metric">AWS • Azure</span>
+            </div>
+
+            <div class="card">
+              <strong>Data for UI (MongoDB)</strong> — designed UI-friendly
+              responses and indexes to speed list/detail views; faster search &
+              filters
+              <span class="metric">faster queries</span>
+            </div>
+          </details>
+        </div>
+
+        <div
+          class="experience-cards"
+          id="aicompanystartupExperience"
+          style="display: none"
+        >
+          <div class="card">
+            <strong>Frontend lead (Django/Flask + vanilla JS)</strong> — led
+            server-rendered UI development with reusable components and
+            accessible, responsive pages
+            <span class="metric">Python • JS</span>
+          </div>
+          <div class="card">
+            <strong>Django app (AWS)</strong> — developed a standalone Django
+            application with REST endpoints/admin; deployed and operated on AWS
+            <span class="metric">Django • AWS</span>
+          </div>
+          <div class="card">
+            <strong>React for fast updates</strong> — stateful components with
+            background fetch (fetch/Axios), debounced search, and optimistic UI;
+            minimized full page reloads for snappier interactions
+            <span class="metric">faster UI</span>
+          </div>
+
+          <div class="card">
+            <strong>Data structures for UI data</strong> — implemented efficient
+            structures/algorithms to cut memory footprint ~20% in the web app
+            <span class="metric">−20% memory</span>
+          </div>
+
+          <div class="card">
+            <strong>Flask frontend</strong> — Jinja2 templates with progressive
+            enhancement; clean forms, validation, and helpful error states
+            <span class="metric">Flask • Jinja2</span>
+          </div>
+
+          <details class="more-cards">
+            <summary>More Software impact</summary>
+            <div class="card">
+              <strong>Testing (Go)</strong> — unit & integration tests at ~90%
+              coverage; QA-reported bugs down ~40%
+              <span class="metric">90% cov • −40% bugs</span>
+            </div>
+            <div class="card">
+              <strong>QR-driven IAM setup</strong> — generated QR codes to
+              bootstrap AWS IAM role creation; surfaced flows in a Flask admin
+              <span class="metric">AWS • QR</span>
+            </div>
+
+            <div class="card">
+              <strong>Hardware prototypes</strong> — designed parts/enclosures
+              with 3D visualization tools for precision and fit
+              <span class="metric">CAD/3D</span>
+            </div>
+
+            <div class="card">
+              <strong>IoT performance</strong> — tailored device code to boost
+              GPU throughput ~20% and reduce latency ~15%
+              <span class="metric">+20% GPU • −15% latency</span>
+            </div>
+
+            <div class="card">
+              <strong>Cost & form factor</strong> — engineered a more compact,
+              cost-effective product; production costs down ~50% while
+              maintaining performance
+              <span class="metric">−50% cost</span>
+            </div>
+
+            <div class="card">
+              <strong>Cloud & real-time</strong> — designed/deployed AWS
+              architecture with MQTT for device ↔ cloud messaging at scale
+              <span class="metric">AWS • MQTT</span>
+            </div>
+          </details>
+        </div>
+
+        <div
+          class="experience-cards"
+          id="freelanceExperience"
+          style="display: none"
+        >
+          <div class="card">
+            <strong>React frontends</strong> — built modern, responsive web apps
+            with componentized UI and fast interactions (separate codebase from
+            backend)
+            <span class="metric">React</span>
+          </div>
+
+          <div class="card">
+            <strong>Static sites (GitHub) → Oracle containers</strong> —
+            built/versioned static sites in GitHub and deployed to Oracle Cloud
+            (OCI) container instances
+            <span class="metric">−40% deploy time</span>
+          </div>
+
+          <div class="card">
+            <strong>Product collaboration</strong> — gathered requirements,
+            prototyped, and iterated with stakeholders to meet strategic goals
+            <span class="metric">UX collab</span>
+          </div>
+
+          <div class="card">
+            <strong>Entrepreneur sites</strong> — launched responsive sites that
+            grew online business ~30%
+            <span class="metric">+30% growth</span>
+          </div>
+
+          <div class="card">
+            <strong>Search UX</strong> — dynamic search with filters, sort, and
+            alpha index; fast, debounced updates for snappy results
+            <span class="metric">faster UX</span>
+          </div>
+
+          <div class="card">
+            <strong>React components & tests</strong> — modular, testable UI
+            with unit coverage to prevent regressions
+            <span class="metric">reliability</span>
+          </div>
+
+          <details class="more-cards">
+            <summary>More Software impact</summary>
+
+            <div class="card">
+              <strong>Go API</strong> — structured endpoints and efficient data
+              shapes to feed the frontend
+              <span class="metric">Go API</span>
+            </div>
+
+            <div class="card">
+              <strong>Containerization & deploy</strong> — Dockerfile → Podman,
+              pushed to Docker Hub, deployed to Azure Kubernetes
+              <span class="metric">Docker • AKS</span>
+            </div>
+            <div class="card">
+              <strong>Authentication</strong> — secure login/session handling,
+              protected routes, and clear error states
+              <span class="metric">auth</span>
+            </div>
+          </details>
+        </div>
+
+        <!-- Repeat for other companies -->
+
+        <!-- Repeat for other companies -->
+      </div>
+
+      <div class="image-section scroll-box" id="imageContainer">
+        <div class="scroll-inner">
+          <div class="image-wrapper">
+            <img
+              class="main-image"
+              src="https://i.pinimg.com/originals/98/10/fc/9810fca42655da3745f31b5e8b016c86.gif"
+              alt="Edge Runner Car"
+            />
+            <div class="tab-overlay" id="skillsetsOverlay0">
+              <div class="tab-options">
+                <a href="./frontend.html">Frontend development </a>
+                <a href="./software.html">software engineering</a>
+                <a href="./softskill.html">Soft skills</a>
+              </div>
+            </div>
+            <div class="tab-overlay" id="skillsOverlay0">
+              <div class="tab-options">
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 0)"
+                  data-subtitle="initial layout"
+                  >initial layout</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 1)"
+                  data-subtitle="northrop grumman"
+                  >northrop grumman</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 2)"
+                  data-subtitle="ai company | start-up"
+                  >ai company | start-up</a
+                >
+
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 3)"
+                  data-subtitle="freelance"
+                  >freelance</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <img
+              class="main-image"
+              src="https://64.media.tumblr.com/d725e64793cc5e74717fe19faef9d073/tumblr_nx7em2oWWI1t382eqo1_500.gif"
+              alt="Tunnel Scene"
+            />
+            <div class="tab-overlay" id="skillsetsOverlay1">
+              <div class="tab-options">
+                <a href="./frontend.html">Frontend development </a>
+                <a href="./software.html">software engineering</a>
+                <a href="./softskill.html">Soft skills</a>
+              </div>
+            </div>
+            <div class="tab-overlay" id="skillsOverlay1">
+              <div class="tab-options">
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 0)"
+                  data-subtitle="initial layout"
+                  >initial layout</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 1)"
+                  data-subtitle="northrop grumman"
+                  >northrop grumman</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 2)"
+                  data-subtitle="ai company | start-up"
+                  >ai company | start-up</a
+                >
+
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 3)"
+                  data-subtitle="freelance"
+                  >freelance</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ai comapany button image --------------------------->
+          <div class="image-wrapper">
+            <img
+              class="main-image"
+              src="https://giffiles.alphacoders.com/194/19437.gif"
+              alt="Tunnel Scene"
+            />
+            <div class="tab-overlay" id="skillsetsOverlay2">
+              <div class="tab-options">
+                <a href="./frontend.html">Frontend development </a>
+                <a href="./software.html">software engineering</a>
+                <a href="./softskill.html">Soft skills</a>
+              </div>
+            </div>
+            <div class="tab-overlay" id="skillsOverlay2">
+              <div class="tab-options">
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 0)"
+                  data-subtitle="initial layout"
+                  >initial layout</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 1)"
+                  data-subtitle="northrop grumman"
+                  >northrop grumman</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 2)"
+                  data-subtitle="ai company | start-up"
+                  >ai company | start-up</a
+                >
+
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 3)"
+                  data-subtitle="freelance"
+                  >freelance</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- frelance button image --------------------------->
+
+          <div class="image-wrapper">
+            <img
+              class="main-image"
+              src="https://i.pinimg.com/originals/a0/d5/81/a0d581666d26dd9c66bf8ed395cba948.gif"
+              alt="Tunnel Scene"
+            />
+            <div class="tab-overlay" id="skillsetsOverlay3">
+              <div class="tab-options">
+                <a href="./frontend.html">Frontend development </a>
+                <a href="./software.html">software engineering</a>
+                <a href="./softskill.html">Soft skills</a>
+              </div>
+            </div>
+            <div class="tab-overlay" id="skillsOverlay3">
+              <div class="tab-options">
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 0)"
+                  data-subtitle="initial layout"
+                  >initial layout</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 1)"
+                  data-subtitle="northrop grumman"
+                  >northrop grumman</a
+                >
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 2)"
+                  data-subtitle="ai company | start-up"
+                  >ai company | start-up</a
+                >
+
+                <a
+                  href="#"
+                  onclick="handleOverlayTabClick(this, 3)"
+                  data-subtitle="freelance"
+                  >freelance</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-menu" id="tabMenu">
+          <a id="menu-options" class="nav-right" href="./index.html">home</a>
+
+          <a id="menu-options" class="nav-right" href="./about-me.html"
+            >ABOUT ME</a
+          >
+          <div class="nav-right" onclick="toggleSkillsOverlay()">
+            work experince
+          </div>
+          <div
+            id="menu-options"
+            class="nav-right"
+            onclick="toggleSkillsetsOverlay()"
+          >
+            Skill sets
+          </div>
+
+          <a id="menu-options" class="nav-right" href="./github.html"
+            >github PROJECTS</a
+          >
+          <a id="menu-options" class="nav-right" href="./cert.html"
+            >CERFICATIONS</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/workex.js">
+    /////////////////////was updated to work with menu reopening
+  </script>
+</html>
+<!-- .scroll-box {
+    position: relative;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 20px;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scroll-box::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .scroll-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+   -->

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cert.css" />
+    <title>CERTIFICATION PAGE</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a class="back-button" href="#" onclick="return goBack(event)">
+        <div class="bracket-container">
+          <div class="bracket-left">[</div>
+          <div class="nav-left" id="goBackBtn">go back</div>
+          <div class="bracket-right">]</div>
+        </div>
+      </a>
+
+      <div class="nav-right" onclick="toggleTabs()">Menu</div>
+    </div>
+
+    <div class="main-content">
+      <div class="text-content">
+        <div class="title">CERFICATIONS</div>
+        <div class="subtitle-cert">
+          UDEMY | COURSERA | CLOUD GURU | LINKEDIN
+        </div>
+
+        <div class="tags">
+          <div class="tag">Web Development Bootcamp</div>
+          <div class="tag">Full-Stack Web Development</div>
+          <div class="tag">Data Structure + Algorithms</div>
+          <div class="tag">The Ultimate React Course (In process)</div>
+          <div class="tag dark">
+            Deploying to AWS with Terraform and Ansible
+          </div>
+          <div class="tag dark">
+            Machine learning, Data Science and Deep learning with Python
+          </div>
+          <div class="tag dark">Node.js backend basics with best practices</div>
+          <div class="tag dark">
+            Terraform Basics - Create a virtual machine on MS Azure
+          </div>
+          <div class="tag dark">
+            Python for Data Science and Machine Learning
+          </div>
+          <div class="tag">
+            Monitoring Kubernetes Cluster using Prometheus and Grafana
+          </div>
+          <div class="tag dark">Agile Foundations</div>
+          <div class="tag dark">Developing a Google SRE Culture</div>
+          <div class="tag">
+            Introduction to Containers with Dockers,Kubernetes and OpenShift
+          </div>
+          <div class="tag dark">DevOps monitoring deep dive</div>
+          <div class="tag dark">
+            Beginner's Guide to Containers and Orchestration
+          </div>
+          <div class="tag">
+            Google Cloud DevOps and SREs (GCP DevOps Engineer Track Part 2)
+          </div>
+        </div>
+      </div>
+
+      <div class="image-section">
+        <img
+          class="main-image"
+          src="https://i.pinimg.com/originals/1e/f9/d5/1ef9d5291c706a89ea807bf20b09fbce.gif"
+          alt="Edge Runner Car"
+        />
+        <div class="tab-overlay" id="skillsOverlay">
+          <div class="tab-options">
+            <a href="./frontend.html">Frontend development </a>
+            <a href="./software.html">software engineering</a>
+            <a href="./softskill.html">Soft skills</a>
+          </div>
+        </div>
+
+        <div class="tab-menu" id="tabMenu">
+          <a id="menu-options" class="nav-right" href="./index.html">home</a>
+
+          <a id="menu-options" class="nav-right" href="./about-me.html"
+            >ABOUT ME</a
+          >
+          <a id="menu-options" class="nav-right" href="./workEx.html"
+            >WORK EXPERIENCE</a
+          >
+          <div
+            class="nav-right"
+            id="menu-options"
+            onclick="toggleSkillsOverlay()"
+          >
+            Skill sets
+          </div>
+          <a id="menu-options" class="nav-right" href="./github.html">
+            github PROJECTS</a
+          >
+          <div class="nav-right">CERTIFICATIONS</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/cert.js"></script>
+</html>
+<!-- .scroll-box {
+    position: relative;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 20px;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scroll-box::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .scroll-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+   -->

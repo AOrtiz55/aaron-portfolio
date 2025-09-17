@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/frontend.css" />
+    <title>FRONTEND PAGE</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a class="back-button" href="#" onclick="return goBack(event)">
+        <div class="bracket-container">
+          <div class="bracket-left">[</div>
+          <div class="nav-left" id="goBackBtn">go back</div>
+          <div class="bracket-right">]</div>
+        </div>
+      </a>
+      <div class="nav-right" onclick="toggleTabs()">Menu</div>
+    </div>
+
+    <div class="main-content">
+      <div class="text-content">
+        <div class="title">frontend skills</div>
+        <div class="subtitle">FULL-STACK DEVELOPER</div>
+
+        <div class="tags">
+          <div class="tag dark">Responsive Web Design</div>
+          <div class="tag dark">UI | UX Design</div>
+          <div class="tag">flask</div>
+          <div class="tag dark">Mobile Design</div>
+          <div class="tag">ServiceNow</div>
+          <div class="tag">Angular</div>
+          <div class="tag">Django</div>
+          <div class="tag">React</div>
+          <div class="tag dark">JavaScript</div>
+          <div class="tag">Python</div>
+          <div class="tag">GO</div>
+          <div class="tag dark">Figma|Axure</div>
+          <div class="tag dark">Bootstrap</div>
+          <div class="tag dark">Next.js</div>
+          <div class="tag dark">TypeScript</div>
+          <div class="tag dark">Node.js</div>
+          <div class="tag dark">Data Structures</div>
+          <div class="tag dark">HTML|css</div>
+          <div class="tag dark">RESTful APIs</div>
+          <div class="tag dark">Containerization</div>
+          <div class="tag">web performance</div>
+          <div class="tag dark">Unit Testing</div>
+          <div class="tag dark">Automation Testing</div>
+          <div class="tag dark">Tailwind</div>
+        </div>
+      </div>
+
+      <div class="image-section">
+        <img
+          class="main-image"
+          src="https://64.media.tumblr.com/17dd84fa820ae8b57a86cb07b899bc7c/tumblr_owjm721f1j1vu5dwpo1_500.gif"
+          alt="Edge Runner Car"
+        />
+        <div class="tab-overlay" id="skillsOverlay">
+          <div class="tab-options">
+            <a href="./frontend.html">Frontend development </a>
+            <a href="./software.html">software engineering</a>
+            <a href="./softskill.html">Soft skills</a>
+          </div>
+        </div>
+
+        <div class="tab-menu" id="tabMenu">
+          <a id="menu-options" class="nav-right" href="./index.html">home</a>
+
+          <a id="menu-options" class="nav-right" href="./about-me.html"
+            >ABOUT ME</a
+          >
+          <a id="menu-options" class="nav-right" href="./workEx.html"
+            >WORK EXPERIENCE</a
+          >
+          <div class="nav-right" onclick="toggleSkillsOverlay()">
+            Skill sets
+          </div>
+          <!-- <a id="menu-options" class="nav-right" href="softskill.html"
+            >SOFT SKILLS</a
+          > -->
+          <!-- <a id="menu-options" class="nav-right" href="softskill.html"
+            >soft skills</a
+          > -->
+          <a id="menu-options" class="nav-right" href="./github.html"
+            >github projects</a
+          >
+          <a id="menu-options" class="nav-right" href="./cert.html"
+            >CERFICATIONS</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/frontend.js"></script>
+</html>
+<!-- .scroll-box {
+    position: relative;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 20px;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scroll-box::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .scroll-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+   -->

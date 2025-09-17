@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/software.css" />
+    <title>SOFTWARE PAGE</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a class="back-button" href="#" onclick="return goBack(event)">
+        <div class="bracket-container">
+          <div class="bracket-left">[</div>
+          <div class="nav-left" id="goBackBtn">go back</div>
+          <div class="bracket-right">]</div>
+        </div>
+      </a>
+
+      <div class="nav-right" onclick="toggleTabs()">Menu</div>
+    </div>
+
+    <div class="main-content">
+      <div class="text-content">
+        <div class="title">software skills</div>
+        <div class="subtitle">ENGINEERING | DEVOPS</div>
+
+        <div class="tags">
+          <div class="tag">full-stack</div>
+          <div class="tag">Python</div>
+          <div class="tag">ServiceNow</div>
+          <div class="tag">Angular</div>
+          <div class="tag">LINUX | Bash</div>
+          <div class="tag dark">GO</div>
+          <div class="tag">c# |.net</div>
+          <div class="tag">AWS | Azure</div>
+          <div class="tag dark">Postman</div>
+          <div class="tag dark">sre | monitoring</div>
+          <div class="tag">grafana | prometheus</div>
+          <div class="tag">JavaScript</div>
+          <div class="tag dark">Data Structures | Algorithms</div>
+          <div class="tag dark">Jira | confluence</div>
+          <div class="tag">django</div>
+          <div class="tag">MongoDB | InfluxDB</div>
+          <div class="tag">Java</div>
+          <div class="tag dark">TypeScript</div>
+          <div class="tag">ML | AI</div>
+          <div class="tag">Docker | Kubernetes</div>
+          <div class="tag dark">automating testcases</div>
+          <div class="tag dark">RESTful APIs</div>
+          <div class="tag">Containerization</div>
+          <div class="tag dark">Selenium</div>
+          <div class="tag dark">ESC</div>
+          <div class="tag">CI | CD</div>
+          <div class="tag dark">RedHat OpenShift</div>
+          <div class="tag dark">IOT</div>
+          <div class="tag dark">3d printing</div>
+        </div>
+      </div>
+
+      <div class="image-section">
+        <img
+          class="main-image"
+          src="https://i.redd.it/hg9cto7d5re81.gif"
+          alt="Edge Runner Car"
+        />
+        <div class="tab-overlay" id="skillsOverlay">
+          <div class="tab-options">
+            <a href="./frontend.html">Frontend development </a>
+            <a href="./software.html">software engineering</a>
+            <a href="./softskill.html">Soft skills</a>
+          </div>
+        </div>
+
+        <div class="tab-menu" id="tabMenu">
+          <a id="menu-options" class="nav-right" href="./index.html">home</a>
+
+          <a id="menu-options" class="nav-right" href="./about-me.html"
+            >ABOUT ME</a
+          >
+          <a id="menu-options" class="nav-right" href="./workEx.html"
+            >WORK EXPERIENCE</a
+          >
+          <div class="nav-right" onclick="toggleSkillsOverlay()">
+            Skill sets
+          </div>
+
+          <a id="menu-options" class="nav-right" href="./github.html"
+            >github PROJECTS</a
+          >
+          <a id="menu-options" class="nav-right" href="./cert.html"
+            >CERFICATIONS</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/software.js"></script>
+</html>
+<!-- .scroll-box {
+    position: relative;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 20px;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scroll-box::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  .scroll-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+   -->
