@@ -15,7 +15,14 @@
           <div class="bracket-right">]</div>
         </div>
       </a>
-      <div class="nav-right" onclick="toggleTabs()">Menu</div>
+      <button
+        class="nav-right"
+        id="tabsToggle"
+        aria-controls="tabMenu"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
     </div>
 
     <div class="main-content">
@@ -57,7 +64,7 @@
           src="https://64.media.tumblr.com/17dd84fa820ae8b57a86cb07b899bc7c/tumblr_owjm721f1j1vu5dwpo1_500.gif"
           alt="Edge Runner Car"
         />
-        <div class="tab-overlay" id="skillsOverlay">
+        <div class="tab-overlay" id="skillsOverlay" hidden>
           <div class="tab-options">
             <a href="./frontend.html">Frontend development </a>
             <a href="./software.html">software engineering</a>
@@ -65,7 +72,7 @@
           </div>
         </div>
 
-        <div class="tab-menu" id="tabMenu">
+        <div class="tab-menu" id="tabMenu" hidden>
           <a id="menu-options" class="nav-right" href="../index.html">home</a>
 
           <a id="menu-options" class="nav-right" href="./about-me.html"
@@ -74,9 +81,14 @@
           <a id="menu-options" class="nav-right" href="./workEx.html"
             >WORK EXPERIENCE</a
           >
-          <div class="nav-right" onclick="toggleSkillsOverlay()">
+          <button
+            class="nav-right"
+            id="skillsToggle"
+            aria-controls="skillsOverlay"
+            aria-expanded="false"
+          >
             Skill sets
-          </div>
+          </button>
           <!-- <a id="menu-options" class="nav-right" href="softskill.html"
             >SOFT SKILLS</a
           > -->
