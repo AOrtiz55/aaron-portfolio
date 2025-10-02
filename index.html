@@ -13,12 +13,15 @@
             <div class="nav-left">Home</div>
             <div class = "bracket-container">
             <div class = "bracket-left">[ </div>
-            <div class="nav-right" id="menuToggle" onclick="toggleMenu()">MENU</div>
+            <!-- <div class="nav-right" id="menuToggle" onclick="toggleMenu()">MENU</div> -->
+            <button class="nav-right" id="menuToggle" aria-expanded="false" aria-controls="menu">
+              MENU
+            </button>
             <div class = "bracket-right">] </div>
         </div>
           </nav>
         
-          <div class="menu" id="menu">
+          <div class="menu" id="menu" hidden>
             <ul >
               <a href="./html/about-me.html"><li class="menu-items">ABOUT ME</li></a>
               <a href="./html/workEx.html"><li class="menu-items">WORK EXPERIENCE</li></a>

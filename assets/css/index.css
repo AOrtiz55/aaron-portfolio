@@ -390,10 +390,18 @@ nav {
   z-index: 2;
 }
 
+/* new code change */
+.menu[hidden] {
+  display: none;
+}
+button#menuToggle {
+  background: none;
+  border: none;
+}
 .menu.open {
   transform: translateY(0);
 }
-
+/* new code change */
 .menu ul {
   list-style: none;
   text-align: center;
