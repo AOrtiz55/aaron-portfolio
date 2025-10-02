@@ -323,3 +323,60 @@ a.back-button {
     border-radius: 20px;
     object-fit: cover;
   } */
+/* new code for hiding menu */
+#tabMenu[hidden],
+#skillsOverlay[hidden] {
+  display: none;
+}
+button#tabsToggle {
+  background: none;
+  border: none;
+}
+#tabMenu[hidden],
+#skillsOverlay[hidden] {
+  display: none;
+}
+/* Ensure overlay can sit on top of the image and receive clicks */
+.image-section {
+  position: relative;
+}
+
+/* Start hidden via [hidden] attribute */
+#skillsOverlay[hidden] {
+  display: none;
+}
+
+/* Base overlay box — hidden/unclickable until .open */
+#skillsOverlay {
+  position: absolute;
+  inset: 0; /* fill the image-section */
+  display: flex; /* paired with [hidden] to control initial state */
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20; /* higher than image, tabMenu, etc. */
+  transition: opacity 200ms ease;
+}
+
+/* Visible state */
+#skillsOverlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Tab menu visibility helpers */
+#tabMenu[hidden] {
+  display: none;
+}
+/* Make links and the Skill Sets button look identical in the tab menu */
+.tab-menu .nav-right {
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  padding: 0; /* match your link padding if you use it elsewhere */
+}
+button#skillsToggle {
+  background: none;
+  border: none;
+}
