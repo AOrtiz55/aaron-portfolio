@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-///////////////////////////////////////////////
+/////////////////////////////////////////////// this if for hiding menu
 (function () {
   const tabMenu = document.getElementById("tabMenu");
   const tabsToggle = document.getElementById("tabsToggle");
