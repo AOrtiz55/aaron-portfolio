@@ -17,7 +17,14 @@
           <div class="bracket-right">]</div>
         </div>
       </a>
-      <div class="nav-right" onclick="toggleTabs()">Menu</div>
+      <button
+      class="nav-right"
+      id="tabsToggle"
+      aria-controls="tabMenu"
+      aria-expanded="false"
+    >
+      Menu
+    </button>
     </div>
 
     <div class="main-content">
@@ -52,13 +59,18 @@
           <a
           class="github-buttons"
           href="https://github.com/AOrtiz55/Pizza-Menu.git"
-          ><div class="tag dark">pizza menu</div></a
+          ><div class="tag ">Lego Builder</div></a
         >
-          <a
+        <a
+        class="github-buttons"
+        href="https://github.com/AOrtiz55/Pizza-Menu.git"
+        ><div class="tag dark">pizza menu</div></a
+      >
+          <!-- <a
             class="github-buttons"
             href="https://github.com/AOrtiz55/Object-Field_Detection.git"
-            ><div class="tag">object dection</div></a
-          >
+            ><div class="tag dark">object dection</div></a
+          > -->
           <a class="github-buttons" href="https://github.com/AOrtiz55/AI.git"
             ><div class="tag dark">AI assistant</div></a
           >
@@ -70,6 +82,11 @@
           <a class="github-buttons" href="https://github.com/AOrtiz55/Dogs.git"
             ><div class="tag">dog friends</div></a
           >
+          <a
+          class="github-buttons"
+          href="https://github.com/AOrtiz55/Object-Field_Detection.git"
+          ><div class="tag ">object dection</div></a
+        >
           <a
             class="github-buttons"
             href="https://github.com/AOrtiz55/Simon-Game.git"
@@ -85,11 +102,11 @@
             href="https://github.com/AOrtiz55/Terraform.git"
             ><div class="tag">Terraform</div></a
           > -->
-          <a
+          <!-- <a
             class="github-buttons"
             href="https://github.com/AOrtiz55/Odyssey_Collections.git"
             ><div class="tag dark">crypto site</div></a
-          >
+          > -->
           <a
             class="github-buttons"
             href="https://github.com/AOrtiz55/Newsletter.git"
@@ -140,6 +157,15 @@
             </a>
             <a href="https://github.com/AOrtiz55/Fetch-project.git">
               <div id="top-row-card" class="card">
+                <h1 class="git-title">[ Angualr project ]</h1>
+                Lego
+                <p class="description">
+                  "Developed a dynamic web application that connects potential adopters with sheltered dogs, streamlining the search process and increasing the likelihood of successful adoptions.
+                </p>
+              </div>
+            </a>
+            <a href="https://github.com/AOrtiz55/Fetch-project.git">
+              <div class="card">
                 <h1 class="git-title">[ React project ]</h1>
                 dog shelter website
                 <p class="description">
@@ -147,7 +173,6 @@
                 </p>
               </div>
             </a>
-       
             <a href="https://github.com/AOrtiz55/daily-quote.git">
               <div id="top-row-card" class="card">
                 <h1 class="git-title">[ React project ]</h1>
@@ -174,13 +199,13 @@
                 </p>
               </div>
             </a>
-            <a href="https://github.com/AOrtiz55/AI.git">
+            <!-- <a href="https://github.com/AOrtiz55/AI.git">
               <div id="ds" class="card">
                 <h1 class="git-title">[ Ml|ai project ]</h1>
                 AI assistant
                 <p class="description">smart AI assistant for my computer</p>
               </div>
-            </a>
+            </a> -->
             <a href="https://github.com/AOrtiz55/Mercedes-Benz.git">
               <div class="card">
                 <h1 class="git-title">[ frontend project ]</h1>
@@ -205,14 +230,13 @@
           <!-- Existing tab-overlay & tab-menu... -->
         </div>
 
-        <div class="tab-overlay" id="skillsOverlay">
+        <div class="tab-overlay" id="skillsOverlay" hidden>
           <div class="tab-options">
             <a href="./frontend.html">Frontend development </a>
             <a href="./software.html">software engineering</a>
             <a href="./softskill.html">Soft skills</a>
           </div>
         </div>
-
         <div class="tab-menu" id="tabMenu">
           <a id="menu-options" class="nav-right" href="../index.html">home</a>
 
@@ -220,7 +244,14 @@
           <a id="menu-options" class="nav-right" href="./workEx.html"
             >WORK EXPERIENCE</a >
 
-          <div id="menu-options"class="nav-right" onclick="toggleSkillsOverlay()">Skill sets</div>
+            <button
+            class="nav-right"
+            id="skillsToggle"
+            aria-controls="skillsOverlay"
+            aria-expanded="false"
+          >
+            Skill sets
+          </button>
           
           <div class="nav-right" >
             github PROJECTS
