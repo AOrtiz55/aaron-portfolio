@@ -16,7 +16,14 @@
         </div>
       </a>
 
-      <div class="nav-right" onclick="toggleTabs()">Menu</div>
+      <button
+        class="nav-right"
+        id="tabsToggle"
+        aria-controls="tabMenu"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
     </div>
 
     <div class="main-content">
@@ -68,7 +75,7 @@
           src="https://i.pinimg.com/originals/1e/f9/d5/1ef9d5291c706a89ea807bf20b09fbce.gif"
           alt="Edge Runner Car"
         />
-        <div class="tab-overlay" id="skillsOverlay">
+        <div class="tab-overlay" id="skillsOverlay" hidden>
           <div class="tab-options">
             <a href="./frontend.html">Frontend development </a>
             <a href="./software.html">software engineering</a>
@@ -85,13 +92,14 @@
           <a id="menu-options" class="nav-right" href="./workEx.html"
             >WORK EXPERIENCE</a
           >
-          <div
+          <button
             class="nav-right"
-            id="menu-options"
-            onclick="toggleSkillsOverlay()"
+            id="skillsToggle"
+            aria-controls="skillsOverlay"
+            aria-expanded="false"
           >
             Skill sets
-          </div>
+          </button>
           <a id="menu-options" class="nav-right" href="./github.html">
             github PROJECTS</a
           >
