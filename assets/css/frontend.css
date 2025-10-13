@@ -111,8 +111,8 @@ a.back-button {
 .main-image {
   width: 100%;
   border-radius: 25px;
-  object-fit: cover;
-  height: 81vh;
+  object-fit: fill;
+  height: 82vh;
 }
 
 .buy-button {

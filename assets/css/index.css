@@ -458,7 +458,7 @@ button#menuToggle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: red;
+  background: #ff4081;
   box-shadow: 0 0 0 #40e6ff;
 
   animation: pulse 2s infinite;
