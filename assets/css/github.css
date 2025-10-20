@@ -387,7 +387,7 @@ div#main-git-button {
 }
 .card:hover {
   background: #ff4081;
-  color: lightgray;
+  color: white;
 }
 /*cool trick to specify child class*/
 .card:hover .description {
@@ -460,4 +460,16 @@ button#skillsToggle:hover {
   background: none;
   border: none;
   font-size: 24px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 45px 0;
 }
