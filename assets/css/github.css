@@ -387,7 +387,7 @@ div#main-git-button {
 }
 .card:hover {
   background: #ff4081;
-  color: lightgray;
+  color: white;
 }
 /*cool trick to specify child class*/
 .card:hover .description {
