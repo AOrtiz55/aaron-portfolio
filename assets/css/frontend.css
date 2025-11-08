@@ -396,3 +396,18 @@ footer {
   text-align: center;
   padding: 45px 0;
 }
+@media screen and (max-width: 1500px) {
+  footer {
+    padding: 9px 0;
+  }
+  .tags {
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 426px;
+    overflow: auto;
+    height: 67vh;
+    scrollbar-color: #ff4081 black;
+  }
+}

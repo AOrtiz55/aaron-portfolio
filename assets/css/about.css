@@ -465,7 +465,7 @@ a.back-button {
 }
 .hex-glow {
   height: 70vh;
-  width: 57em;
+  /* width: 57em; */
   margin-left: -14em;
   margin-top: -70px;
 }
@@ -750,4 +750,16 @@ footer {
   color: #fff;
   text-align: center;
   padding: 45px 0;
+}
+
+/* media queries for mac */
+
+@media screen and (max-width: 1500px) {
+  footer {
+    padding: 9px 0;
+  }
+  .about-title-wrap {
+    width: 52%;
+    padding-right: 2%;
+  }
 }
