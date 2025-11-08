@@ -473,3 +473,33 @@ footer {
   text-align: center;
   padding: 45px 0;
 }
+
+/* media queries for mac */
+
+@media screen and (max-width: 1500px) {
+  footer {
+    padding: 9px 0;
+  }
+  .card-grid {
+    overflow: auto;
+    height: 77vh;
+    scrollbar-color: #ff4081 black;
+  }
+  .git-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 7px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #aaa;
+    max-width: 400px;
+    margin-top: 3px;
+  }
+  .card {
+    padding: 10px;
+    height: 17vh;
+  }
+}

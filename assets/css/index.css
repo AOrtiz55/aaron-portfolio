@@ -536,3 +536,48 @@ footer {
   text-align: center;
   padding: 45px 0;
 }
+/* media queries for mac */
+@media screen and (max-width: 1500px) {
+  .job-title {
+    font-size: 47px !important;
+  }
+  .card-row {
+    display: flex;
+    gap: 31px;
+  }
+  .card {
+    width: 435px;
+    height: auto;
+  }
+  #popup1.show {
+    display: flex;
+    height: 47vh;
+    width: 64%;
+    margin-top: -61px;
+    margin-left: 21.3rem;
+    border-radius: 10px;
+  }
+  #popup2.show {
+    display: flex;
+    height: 47vh;
+    width: 36%;
+    left: 63%;
+    border-radius: 10px;
+    margin-top: -59px;
+  }
+  .card.interactive-2:hover {
+    width: 250px;
+    height: 250px;
+    transform: rotate(45deg);
+    margin-left: 41px;
+    margin-right: 32px;
+    box-shadow: 0px 0px 15px white;
+    border-radius: 10px;
+  }
+  #popup3.show {
+    height: 48vh;
+    width: 63%;
+    margin-top: -67px;
+    border-radius: 10px;
+  }
+}

@@ -494,3 +494,23 @@ footer {
   text-align: center;
   padding: 45px 0;
 }
+
+/* media queries for mac */
+
+@media screen and (max-width: 1500px) {
+  footer {
+    padding: 9px 0;
+  }
+  .experience-cards .card strong {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .text-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 37%;
+  }
+  .experience-cards {
+    padding-right: 8px !important;
+  }
+}
